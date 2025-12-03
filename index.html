@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人热榜</title>
+    <style>
+        body {
+            background-color: #f4f5f7;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #fb7299; /* B站粉 */
+            margin-bottom: 5px;
+        }
+        .time-tag {
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .news-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+        .news-item:hover {
+            background-color: #fafafa;
+        }
+        .rank {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ccd0d7;
+            width: 40px;
+            text-align: center;
+            margin-right: 15px;
+        }
+        /* 前三名给个特殊颜色 */
+        .rank.top-1 { color: #f25d8e; }
+        .rank.top-2 { color: #f25d8e; }
+        .rank.top-3 { color: #f25d8e; }
+
+        .content {
+            flex: 1;
+        }
+        .title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #222;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .title:hover {
+            color: #fb7299;
+        }
+        .meta {
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🔥 Bilibili 热门视频</h1>
+    <div class="time-tag" id="update-time">加载中...</div>
+    
+    <div id="news-list"></div>
+</div>
+
+<script>
+    // 今天的核心逻辑：
+    // 1. 去读 data.json 文件
+    fetch('./data.json')
+        .then(response => response.json()) // 把读到的文本转成 JSON 对象
+        .then(data => {
+            // 2. 更新时间显示
+            document.getElementById('update-time').innerText = "更新时间: " + data.updated_at;
+
+            // 3. 找到列表容器
+            const listContainer = document.getElementById('news-list');
+
+            // 4. 遍历每一条新闻，生成 HTML
+            data.news.forEach(item => {
+                // 创建一个 div
+                const div = document.createElement('div');
+                div.className = 'news-item';
+                
+                // 这种写法叫“模板字符串”，可以直接把变量嵌进去
+                div.innerHTML = `
+                    <div class="rank top-${item.rank}">${item.rank}</div>
+                    <div class="content">
+                        <a href="${item.link}" target="_blank" class="title">${item.title}</a>
+                        <div class="meta">UP主: ${item.author} · 播放量: ${item.play_count}</div>
+                    </div>
+                `;
+                
+                // 把做好的这一条放到容器里
+                listContainer.appendChild(div);
+            });
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('news-list').innerHTML = '<p style="text-align:center;color:red">数据读取失败！请确保你开了服务器 (python -m http.server)</p>';
+        });
+</script>
+
+</body>
+</html>
