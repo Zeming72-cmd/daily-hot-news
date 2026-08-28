@@ -1,76 +1,76 @@
 {
   "source": "Bilibili热门",
-  "updated_at": "2026-08-27 06:25:23",
+  "updated_at": "2026-08-28 08:16:40",
   "news": [
     {
       "rank": 1,
-      "title": "王中王夺冠自战解说",
-      "author": "柯洁",
-      "play_count": 4923592,
-      "link": "https://b23.tv/BV1PEhP6vERe"
-    },
-    {
-      "rank": 2,
-      "title": "《崩坏：星穹铁道》知更鸟•晴歌角色PV——「追赶风的方向」",
-      "author": "崩坏星穹铁道",
-      "play_count": 3634551,
-      "link": "https://b23.tv/BV1oyhM6AETw"
-    },
-    {
-      "rank": 3,
-      "title": "贱谍过家家（8）",
-      "author": "小潮院长",
-      "play_count": 5307370,
-      "link": "https://b23.tv/BV1gLhK6LEcb"
-    },
-    {
-      "rank": 4,
-      "title": "《无限大》定档预告丨27年1月15日全球上线",
-      "author": "无限大",
-      "play_count": 9368979,
-      "link": "https://b23.tv/BV15EhG6qEAg"
-    },
-    {
-      "rank": 5,
-      "title": "源初之结首曝PV「诸神入刃，斩尽死结」",
-      "author": "源初之结",
-      "play_count": 4013658,
-      "link": "https://b23.tv/BV1erhL6EE6k"
-    },
-    {
-      "rank": 6,
-      "title": "谁能坚持到最后？",
-      "author": "怠惰的一休",
-      "play_count": 3786439,
-      "link": "https://b23.tv/BV18XhP6GExJ"
-    },
-    {
-      "rank": 7,
-      "title": "《海阔天空》一个人的乐队",
-      "author": "罗应星一个人的乐队",
-      "play_count": 2487087,
-      "link": "https://b23.tv/BV1or8e6TEte"
-    },
-    {
-      "rank": 8,
-      "title": "在凤凰古城碰到一位无臂骑手，白天跑外卖，晚上写字谋生，给经历磨难却依旧坚毅的向阳点个赞",
-      "author": "李维刚的日常",
-      "play_count": 2095347,
-      "link": "https://b23.tv/BV16sh36yEHP"
-    },
-    {
-      "rank": 9,
       "title": "【苏新皓｜4K直拍】Abracadabra 直拍｜重·二周年演唱会",
       "author": "JUSTSU_苏新皓",
-      "play_count": 315822,
+      "play_count": 698565,
       "link": "https://b23.tv/BV1VJ8Q6jEgv"
     },
     {
-      "rank": 10,
+      "rank": 2,
+      "title": "《无限大》定档预告丨27年1月15日全球上线",
+      "author": "无限大",
+      "play_count": 10101143,
+      "link": "https://b23.tv/BV15EhG6qEAg"
+    },
+    {
+      "rank": 3,
+      "title": "源初之结首曝PV「诸神入刃，斩尽死结」",
+      "author": "源初之结",
+      "play_count": 5004576,
+      "link": "https://b23.tv/BV1erhL6EE6k"
+    },
+    {
+      "rank": 4,
+      "title": "【朱志鑫】DAY-1原创SOLO「I」 4K直拍｜登陆少年重演唱会",
+      "author": "帆_朱志鑫",
+      "play_count": 268714,
+      "link": "https://b23.tv/BV1jJhj6pEdA"
+    },
+    {
+      "rank": 5,
       "title": "世界伊始——《伊莫》全球上线定档：PC端9月16日 移动端9月23日！",
       "author": "伊莫",
-      "play_count": 4046449,
+      "play_count": 8832864,
       "link": "https://b23.tv/BV1wwhG6JEnc"
+    },
+    {
+      "rank": 6,
+      "title": "《崩坏：星穹铁道》知更鸟•晴歌角色PV——「追赶风的方向」",
+      "author": "崩坏星穹铁道",
+      "play_count": 3990558,
+      "link": "https://b23.tv/BV1oyhM6AETw"
+    },
+    {
+      "rank": 7,
+      "title": "在凤凰古城碰到一位无臂骑手，白天跑外卖，晚上写字谋生，给经历磨难却依旧坚毅的向阳点个赞",
+      "author": "李维刚的日常",
+      "play_count": 2443910,
+      "link": "https://b23.tv/BV16sh36yEHP"
+    },
+    {
+      "rank": 8,
+      "title": "谁能坚持到最后？",
+      "author": "怠惰的一休",
+      "play_count": 4201718,
+      "link": "https://b23.tv/BV18XhP6GExJ"
+    },
+    {
+      "rank": 9,
+      "title": "杭州电梯猥亵案反转：法律给了男邻居清白，但网络舆论的私刑已经执行完了，别让真相的迟到 成为常态",
+      "author": "大象新闻",
+      "play_count": 2809540,
+      "link": "https://b23.tv/BV1Uf8R6jEoC"
+    },
+    {
+      "rank": 10,
+      "title": "王中王夺冠自战解说",
+      "author": "柯洁",
+      "play_count": 5468032,
+      "link": "https://b23.tv/BV1PEhP6vERe"
     }
   ]
 }
